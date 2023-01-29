@@ -18,6 +18,12 @@ html,
   text-align: center;
 }
 
+/* Center the content in the browser window */
+.ranges {
+  margin: auto;
+  text-align: center;
+}
+
 .title {
   font-size: 3rem;
 }

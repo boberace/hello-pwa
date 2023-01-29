@@ -16,15 +16,16 @@
   <meta name="msapplication-TileColor" content="#FFFFFF">
 </head>
 <body class="fullscreen">
-  <div class="ranges">
-    <br/>
-    <br/>R: 
-    <input id="r" type="range" min="0" max="255" step="1" oninput="sendRGB();" />
-    <br/>G: 
-    <input id="g" type="range" min="0" max="255" step="1" oninput="sendRGB();" />
-    <br/>B: 
-    <input id="b" type="range" min="0" max="255" step="1" oninput="sendRGB();" />
-    <br/>
+  <div class="topnav">
+    <h1>PicoW WebSocket Server PWA</h1>
+  </div>
+  <div class="content">
+    <div class="card">
+    <div class="flex-container" id="ga1" class="grid-susitem">
+      <h2>Output - GPIO 2</h2>
+      <p class="state">state: <span id="state">%STATE%</span></p>
+      <p><button id="button" class="button">Toggle</button></p>
+    </div>
   </div>
   <script src="js/main.js"></script>
 </body>

@@ -7,7 +7,7 @@ window.onload = () => {
   }
 }
 
-var gateway = `wss://${window.location.hostname}`;
+var gateway = `ws://${window.location.hostname}/ws`;
 var websocket;
 function initWebSocket() {
   console.log('Trying to open a WebSocket connection...');

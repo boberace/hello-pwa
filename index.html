@@ -27,11 +27,34 @@
       <div class="card">
         <h2>GPIO</h2>
         <p class="state">state: <span id="state">%STATE%</span></p>
-        <p><button id="button" class="button">Toggle</button></p>
+        <p><button id="awesomeButton" class="button">Toggle</button></p>
       </div>
     </div>
   </div>
+<script>
 
+var button = document.getElementById("awesomeButton");
+
+button.addEventListener("click", function() {
+  // create a new HTTP request object
+  var xhr = new XMLHttpRequest();
+
+  // configure the request
+  xhr.open("POST", "http://192.168.0.188/toggle-led", true);
+  xhr.setRequestHeader("Content-Type", "text/plain");
+
+  // send the request with JSON data
+  xhr.send("99");
+
+  // handle the response
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      console.log(xhr.responseText);
+    }
+  };
+});
+
+</script>
 </body>
 
 <script src="js/main.js"></script>

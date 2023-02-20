@@ -32,6 +32,7 @@
     </div>
   </div>
 <script>
+var url = "http://192.168.0.188"
 
 var button = document.getElementById("awesomeButton");
 
@@ -40,7 +41,7 @@ button.addEventListener("click", function() {
   var xhr = new XMLHttpRequest();
 
   // configure the request
-  xhr.open("POST", "http://192.168.0.188/toggle-led", true);
+  xhr.open("POST", url + "/toggle-led", true);
   xhr.setRequestHeader("Content-Type", "text/plain");
 
   // send the request with JSON data

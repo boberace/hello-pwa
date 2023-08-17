@@ -17,7 +17,7 @@ https://jamesjohnson280.github.io/hello-pwa/
 
 ## Range Demo
 
-https://boberace.github.io/hello-pwa/
+https://boberace.github.io/hello-pwa-button/
 
 ## Browser Compatibility
 
